@@ -55,7 +55,7 @@ dotnet ef database update
 
 ### 6️⃣ Run the Application
 ```sh
-dotnet run
+dotnet run --project YouTubeDataManager
 ```
 
 ## 📈 API Documentation
