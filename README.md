@@ -8,6 +8,8 @@ A .NET-based API for fetching, storing, and managing YouTube videos using the Yo
 - Retrieve and filter videos via API endpoints.
 - Soft delete functionality for videos.
 - Uses Swagger for API documentation.
+- Includes a **Postman Collection** for easy API testing.
+- Unit tests implemented with MSTest and Moq.
 
 ## 🛠️ Tech Stack
 - **.NET 9**
@@ -15,6 +17,8 @@ A .NET-based API for fetching, storing, and managing YouTube videos using the Yo
 - **SQLite**
 - **YouTube Data API v3**
 - **Swagger**
+- **MSTest & Moq** (for unit testing)
+- **Postman** (for API testing)
 
 ## 🚀 Getting Started
 
@@ -22,6 +26,7 @@ A .NET-based API for fetching, storing, and managing YouTube videos using the Yo
 - .NET SDK 9
 - SQLite
 - A valid **YouTube API Key**
+- **Postman** (optional, for API testing)
 
 ### 2️⃣ Clone the Repository
 ```sh
@@ -53,10 +58,24 @@ dotnet ef database update
 dotnet run
 ```
 
+## 📈 API Documentation
+- **Swagger UI:**  
+  ```
+  http://localhost:5271/swagger/index.html
+  ```
+- **Postman Collection:**  
+  Import the `YouTubeDataManager.postman_collection.json` file into Postman to test API endpoints easily.
+
+## ✅ Running Tests
+This project includes unit tests using **MSTest** and **Moq** to ensure functionality.
+
+To run tests, use:
+```sh
+dotnet test
+```
+
 ## 📝 Notes
 - The **FetchAndStoreYouTubeVideos** method pulls data from the YouTube API and saves it to the database.
 - Videos can be retrieved, updated, and soft deleted using the API.
-- Swagger documentation is available at:
-```
-http://http://localhost:5271/swagger/index.html
-```
+
+---
